@@ -1,0 +1,116 @@
+/* ==================== Variables ==================== */
+:root {
+  --main-color: #0b9586;
+  --secondary-color: #ffbb1c;
+  --text-color: #777;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px 0px;
+}
+
+/* ==================== Global Rules ==================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* ==================== Main Compounds ==================== */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==================== images container  ==================== */
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.itemContainer .item {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.itemContainer .item .caption {
+  position: absolute;
+  width: 80%;
+  top: 100%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.itemContainer .item .caption .content {
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 12px;
+}
+.itemContainer .item:hover .caption {
+  top: 50%;
+}
+
+/* ==================== popUp Container  ==================== */
+.popUpContainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.popUpContainer .imageContainer {
+  background-size: cover;
+  background-position: center center;
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.imageContainer i {
+  margin: 10px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}

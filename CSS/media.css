@@ -1,0 +1,29 @@
+/* ==================== Media Query (Small Screen) ==================== */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .itemContainer {
+    flex-direction: row;
+  }
+  .itemContainer .item {
+    width: calc((100% - 2rem) / 3);
+  }
+}
+
+/* ==================== Media Query (Medium Screen) ==================== */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .itemContainer .item {
+    width: calc((100% - 3rem) / 4);
+  }
+}
+
+/* ==================== Media Query (Large Screen) ==================== */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
